@@ -2,5 +2,5 @@
 <h1>Burrow#members</h1>
 
 <% @users.each do |user| %>
-	<h3> <%= user.email %> is currently at <%= user.location.place_name %> as of <%= user.updated_at %></h>
+	<h3> <%= user.email %> is currently at <%= user.location.latitude %>, <%= user.location.longitude %> as of <%= user.updated_at %></h>
 <% end %>
